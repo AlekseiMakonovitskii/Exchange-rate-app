@@ -1,6 +1,6 @@
 import * as model from './model.js';
 import * as view from './view.js';
-import * as config from './config';
+import * as config from './config.js';
 
 const app = async () => {
   await model.getListcurrencies();
