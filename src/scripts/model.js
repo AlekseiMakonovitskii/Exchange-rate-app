@@ -2,7 +2,7 @@ import * as config from './config.js';
 
 export const getRate = async () => {
   const res = await fetch(
-    `http://api.frankfurter.app/latest?amount=${config.state.amount}&from=${config.state.from}&to=${config.state.to}`
+    `https://api.frankfurter.app/latest?amount=${config.state.amount}&from=${config.state.from}&to=${config.state.to}`
   );
   const data = await res.json();
   const rate = data.rates[config.state.to];
@@ -17,7 +17,7 @@ export const getRate = async () => {
 };
 
 export const getListcurrencies = async () => {
-  const res = await fetch(`http://api.frankfurter.app/currencies`);
+  const res = await fetch(`https://api.frankfurter.app/currencies`);
   const data = await res.json();
   config.state.currencies = data;
 };
