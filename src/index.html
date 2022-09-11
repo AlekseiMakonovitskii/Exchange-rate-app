@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange rate app</title>
+    <script type="module" defer src="/src/scripts/controller.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="root">
+      <section class="main">
+        <div class="main-container">
+          <div class="text-section">
+            <p>
+              <span id="amountDefault"></span>
+              <span id="labelFrom"></span> equals
+            </p>
+            <h1><span id="currentRate"></span> <span id="labelTo"></span></h1>
+            <p class="date"></p>
+          </div>
+          <div class="inputs-section">
+            <div class="form-section">
+              <form action="" class="form">
+                <label>
+                  <input
+                    type="number"
+                    name=""
+                    id="fromInput"
+                    value="0"
+                    min="0"
+                  />
+                  <select name="from" id="from"></select>
+                </label>
+
+                <label>
+                  <input type="number" name="" id="toInput" value="0" min="0" />
+                  <select name="to" id="to"></select>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
